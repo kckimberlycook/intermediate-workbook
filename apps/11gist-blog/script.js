@@ -1,7 +1,7 @@
 'use strict';
 
 $(document).ready(function() {
-  $.ajax('http://localhost:8080/apps/11gist-blog/api/gists.json', {
+  $.ajax('https://api.github.com/users/kckimberlycook/gists', {
     success: function(gists) {
       gists.forEach(function(gist){
         if (gist.description.indexOf('#post') > -1) {
